@@ -35,15 +35,12 @@
       background-color: #f1f1f1;
     }
     
-    #iframe-container {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
+  #iframe-container {
+      margin-top: 50px; /* Adjust the top margin to accommodate the top bar */
+      height: calc(100% - 50px); /* Subtract the height of the top bar from the container height */
       overflow: hidden;
     }
-    
+
     #my-iframe {
       width: 100%;
       height: 100%;
