@@ -31,13 +31,18 @@
 
   <style>
     /* CSS styles here */
-    body {
+     body {
       background-color: #f1f1f1;
+      margin: 0; /* Add margin: 0; to remove default body margin */
+      padding: 0; /* Add padding: 0; to remove default body padding */
     }
-    
-  #iframe-container {
-      margin-top: 50px; /* Adjust the top margin to accommodate the top bar */
-      height: calc(100% - 50px); /* Subtract the height of the top bar from the container height */
+
+    #iframe-container {
+      position: fixed;
+      top: 50px; /* Adjust the top value to match the height of the top bar */
+      left: 0;
+      width: 100%;
+      height: calc(100% - 50px); /* Subtract the height of the top bar from the window height */
       overflow: hidden;
     }
 
